@@ -1,0 +1,3 @@
+{"name": "wayne1", "age": 23, "sex": true, "major": "python1"}
+{"name": "wayne2", "age": 23, "sex": true, "major": "python2"}
+{"name": "wayne3", "age": 23, "sex": true, "major": "python3"}

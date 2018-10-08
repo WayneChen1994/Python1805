@@ -1,0 +1,7 @@
+'ENGINE': 'django.db.backends.mysql',
+'NAME': "studb",
+'USER': "root",
+"PASSWORD": "root",
+"HOST": "localhost",
+"PORT": "3306",
+"FILENAME": "set.txt",
