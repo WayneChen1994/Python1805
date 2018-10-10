@@ -31,7 +31,7 @@ def printIterByWhile(obj):
 
 if __name__ == "__main__":
     alist = [x for x in range(39)]
-    atuple = (y for y in range(39))
+    atuple = (1, 2, 3, 4, 5, 6, 7)
     aset = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
     adict = {"a": 1, "b": 2, "c": 3, "d": 4, "e": 5}
     astr = "qwertyuiopasdfghjklzxcvbnm"
