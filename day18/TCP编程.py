@@ -68,5 +68,6 @@ alist = re.split(r'\r\n\r\n', html, maxsplit=1)
 with open('head.txt', 'w', newline='') as f:
     f.write(alist[0])
 
+
 with open('index.html', 'w', newline='') as f2:
     f2.write(alist[1])
