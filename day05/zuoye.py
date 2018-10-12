@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 n = int(input("请输入一个正整数："))
 for i in range(1, n + 1):
@@ -7,6 +12,7 @@ for i in range(1, n + 1):
         print(" *", end="")
     print()
 '''
+
 
 '''
 time1 = input("请输入一个时间点【HH:MM:SS】：")
@@ -29,6 +35,8 @@ print("时间下一秒为%02d:%02d:%02d" % (shi, fen, miao))
 
 
 import time
+
+
 musicLrc = '''[00:03.50]传奇
 [00:19.10]作词：刘兵 作曲：李健
 [00:20.60]演唱：王菲
@@ -50,17 +58,25 @@ musicLrc = '''[00:03.50]传奇
 [04:31.38][04:01.40][01:57.43]我一直在你身旁 从未走远
 [04:39.55][04:09.00][02:07.85]
 '''
+
+
 musicDict = {}
 musicLrcList = musicLrc.splitlines()
+
+
 for line in musicLrcList:
     mlist = line.split("]")
     for index in range(len(mlist) - 1):
         timel = mlist[index][1:].split(":")
         timekey = float(timel[0]) * 60 + float(timel[1])
         musicDict[timekey] = mlist[-1]
+
+
 keylist = list(musicDict)
 keylist.sort()
 time.sleep(keylist[0])
+
+
 for index in range(len(keylist)):
     print(musicDict.get(keylist[index]))
     if index > 0:

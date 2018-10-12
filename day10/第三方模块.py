@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 第三方的库都需要安装
 
@@ -8,7 +13,9 @@
 第二种：使用pycharm进行安装
 '''
 
+
 from PIL import Image
+
 
 # 打开图片，生成一个image对象
 im = Image.open('ppp.jpg')

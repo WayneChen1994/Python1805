@@ -1,9 +1,16 @@
-'''
-数据如何存储？
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
 
 '''
+数据如何存储？
+'''
+
+
 import random
 import time
+
 
 def welcome(): 
     print('''
@@ -80,13 +87,11 @@ def search(alluser, cardnum):
     return alluser.get(cardnum).get("money")
 
 
-
-
-
-
 welcome()
 AllUserDict = {}
 isLogin = None
+
+
 while True:
     time.sleep(1)
     num = select()

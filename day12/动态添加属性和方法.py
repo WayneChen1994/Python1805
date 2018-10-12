@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -35,8 +35,10 @@ class Student:
     def __init__(self, weight=120):
         # self.weight = weight
         pass
+
     def say(self):
         print("say hello")
+
     pass
 
 
@@ -47,29 +49,37 @@ stu.age = 18
 print(stu.name)
 print(stu.age)
 
+
 stu.say()
+
 
 # print(stu.weight)
 # print(stu.sex)
 
+
 def say(string):
     print("say", string)
+
 
 # stu.say2 = say
 # stu.say2("byebye")
 
+
 Student.say = say
 Student.say("hello")
+
 
 Student.name = "haha"
 stu2 = Student()
 print(stu2.name)
 # stu2.say()
 
+
 stu3 = Student()
 print(stu3.name)
 # stu3.name = "hehe"
 print(stu3.name)
+
 
 '''
 需求：创建一个老师类，动态添加属性以及方法
@@ -77,31 +87,40 @@ print(stu3.name)
 属性：name,sex,科目
 方法：eat sleep teaching
 '''
+
+
 class Teacher:
     __slots__ = ("name", "sex", "subject", "eat", "sleep", "teaching")
     pass
+
 
 te = Teacher()
 te.name = "lili"
 te.sex = "girl"
 te.subject = "python"
 
+
 def eat(food):
     print("吃", food)
+
 
 def sleep():
     print("睡觉")
 
+
 def teaching():
     print("上课")
+
 
 # def test():
 #     print("testing")
 # te.test = test
 
+
 te.eat = eat
 te.sleep = sleep
 te.teaching = teaching
+
 
 te.eat("香蕉")
 te.sleep()

@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 音乐播放器
 1.上一曲，
@@ -21,8 +26,11 @@
 *     7.退出           *
 ************************
 '''
+
+
 import pygame
 import time
+
 
 musicStr = '''[00:01.49]动力火车 - 当
 [00:20.53]当 《还珠格格》主题曲（动力火车）
@@ -178,12 +186,14 @@ def lyricPlay(musicDict):
     keyList = [x for x in musicDict]
     time.sleep(keyList[0])
     for index in range(len(keyList)):
-        print(resDict.get(keyList[index]))
+        print(musicDict.get(keyList[index]))
         if index > 0:
             time.sleep(keyList[index] - keyList[index - 1])
 
 
 startPlayer()
+
+
 while True:
     showOptions()
     option = input("请选择一项操作：")

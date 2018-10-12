@@ -1,7 +1,13 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 set集合的概述：
 本质：是一个无序的并且不重复的集合
 '''
+
 
 '''
 set集合的创建：
@@ -10,6 +16,8 @@ set集合的创建：
 创建一个空的set集合
 set1 = set()
 '''
+
+
 set1 = {12}
 set2 = set()
 print(type(set1))

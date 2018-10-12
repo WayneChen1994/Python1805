@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
 
 
@@ -30,6 +30,7 @@
 # else:
 #     print("%d不为回文数"%num)
 
+
 # import random
 # print("开始游戏".center(50, "*"))
 # ya = input("买定离手，押大还是押小？【大/小】")
@@ -39,5 +40,3 @@
 #     print("庄家喝酒。。。")
 # else:
 #     print("先干为敬。。。")
-
-

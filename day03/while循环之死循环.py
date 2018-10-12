@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author: Wayne.Chen
 
 
@@ -13,6 +13,7 @@
 #         print("输入年龄非法！请重新输入")
 # print("age =", age)
 
+
 '''
 伪登录：
 用户名：admin 密码：123456
@@ -20,6 +21,7 @@
 输入三次错误，提示“卡被锁了”
 若输入密码正确，提示“登陆成功”
 '''
+
 
 err = 0
 while err < 3:
@@ -35,7 +37,3 @@ while err < 3:
             print("只剩一次机会了")
         elif err == 3:
             print("卡被锁了")
-
-
-
-

@@ -1,10 +1,12 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
 import random
 import time
+
+
 '''
 银行系统：
 使用面向对象写，
@@ -31,11 +33,9 @@ class Card:
         self.isLocked = isLocked
 
 
-
 class ATM:
     def __init__(self, allUserInfo={}):
         self.allUserInfo = allUserInfo
-
 
     def show_Welcome(self):
         print('''
@@ -44,7 +44,6 @@ class ATM:
         *  welcome to bank   *
         *                    *
         **********************''')
-
 
     def show_Options(self):
         print('''
@@ -56,13 +55,11 @@ class ATM:
         *  9.转账   10.改密   *
         **********************''')
 
-
     def createCardId(self):
         cardId = ""
         for i in range(6):
             cardId += random.choice([str(x) for x in range(10)])
         return cardId
-
 
     def createUser(self, currentUser):
         if not currentUser.isOnline:
@@ -109,7 +106,6 @@ class ATM:
             print("请先注销当前用户！")
             return currentUser
 
-
     def login(self, currentUser):
         print("登陆".center(50, "*"))
         cardId = input("请输入银行卡号：")
@@ -155,13 +151,11 @@ class ATM:
                 return args[-1]
         return wrapper
 
-
     @userAuthenticate
     def search(self, currentUser):
         print("查询".center(50, "*"))
         print("您银行卡当前的剩余金额为：%d" % currentUser.card.money)
         return currentUser
-
 
     @userAuthenticate
     def takeMoney(self, currentUser):
@@ -183,7 +177,6 @@ class ATM:
 
         return currentUser
 
-
     @userAuthenticate
     def saveMoney(self, currentUser):
         print("存款".center(50, "*"))
@@ -200,7 +193,6 @@ class ATM:
                 print("输入有误！请重新输入！")
 
         return currentUser
-
 
     def logout(self, currentUser):
         print("注销".center(50, "*"))
@@ -253,7 +245,6 @@ class ATM:
 
         return currentUser
 
-
     @userAuthenticate
     def transform(self, currentUser):
         print("转账".center(50, "*"))
@@ -280,7 +271,6 @@ class ATM:
 
         return currentUser
 
-
     @userAuthenticate
     def setPassword(self, currentUser):
         print("改密".center(50, "*"))
@@ -295,7 +285,6 @@ class ATM:
         return currentUser
 
 
-
 class User:
     u = None
     def __init__(self, name=None, userId=None, phoneNum=None, card=None, isOnline=False):
@@ -304,7 +293,6 @@ class User:
         self.phoneNum = phoneNum
         self.card = card
         self.isOnline = isOnline
-
 
     def __str__(self):
         return '''
@@ -322,7 +310,6 @@ class User:
         是否锁定：%s
         ====================
         ''' % (self.name, self.userId, self.phoneNum, str(self.isOnline), self.card.cardId, self.card.password, self.card.money, str(self.card.isLocked))
-
 
     def useATM(self, option, atm):
         if option == "1":
@@ -354,13 +341,14 @@ class User:
         return self.u
 
 
-
 if __name__ == "__main__":
     myATM = ATM()
     myCard = Card()
     myUser = User()
     myUser.card = myCard
     myATM.show_Welcome()
+
+
     while True:
         myATM.show_Options()
         choice = input("请选择一项操作（0关闭系统）：")

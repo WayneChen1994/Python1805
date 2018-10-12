@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 闭包：
 出现闭包肯定会涉及到函数嵌套，外部的函数我们称之为外函数，里面的函数称为内函数
@@ -12,9 +17,9 @@
 2、有效减少函数调用需要参数的数目
 '''
 
+
 def outer(f):
     def inner(*args):
         print("***********")
         f(*args)
     return inner
-

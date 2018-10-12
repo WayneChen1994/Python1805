@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
 
 
@@ -13,8 +13,9 @@ not in：判断某个元素是否不存在于某个序列
 
 通常用于for循环
 '''
+
+
 a = 10
-list1 = [1,2,3,4,5]
+list1 = [1, 2, 3, 4, 5]
 print(a in list1)
 print(a not in list1)
-

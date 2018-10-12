@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 # def deco(f):
 #     def wrapper(age):
 #         if age > 160 or age < 0:
@@ -19,6 +24,7 @@
 # func2(18)
 # func2(-20)
 # func2(190)
+
 
 '''
 需求：伪登陆
@@ -49,10 +55,12 @@ uname = input("请输入用户名：")
 upsd = input("请输入密码：")
 login(uname, upsd)
 
+
 '''
 装饰器的优点：
 在实际开发过程中，我们可以使用装饰器做到在不修改别人创建的函数的情况下，添加或者修改某些功能
 '''
+
 
 '''
 复杂点的装饰器的定义：

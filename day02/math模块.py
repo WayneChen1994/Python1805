@@ -1,24 +1,30 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
+
 
 # 导入模块
 import math
+
 
 print(math.ceil(123.35))
 print(math.ceil(123.05))
 print(math.ceil(123.95))
 
+
 print(math.floor(123.45))
 print(math.floor(123.85))
 print(math.floor(123.85))
+
 
 print(math.modf(-123.456))
 x, y = math.modf(12.45)
 print(x, y)
 
+
 print(math.sqrt(9))
 print(math.sqrt(8))
+
 
 '''
 # ceil  天花板

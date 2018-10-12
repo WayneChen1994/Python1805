@@ -1,9 +1,17 @@
-from test.hello import sayHello
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
+from day10.test.hello import sayHello
+
+
 '''
 可引入的文件：当前项目下的所有文件都可以引入，
 以及安装的第三方模块，另外还有内置模块，这几种都可以引入，
 但是其他项目中的文件不能直接引入。
 '''
+
 
 '''
 引入外部文件的语法：

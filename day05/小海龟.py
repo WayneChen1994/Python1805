@@ -1,7 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 # author: Wayne.Chen
+
+
 import turtle
+
 
 '''
 # 开始填充
@@ -22,9 +25,12 @@ turtle.end_fill()
 turtle.done()
 '''
 
+
 '''
 三角形
 '''
+
+
 turtle.begin_fill()
 turtle.fillcolor("red")
 turtle.forward(100)
@@ -34,7 +40,3 @@ turtle.left(120)
 turtle.forward(100)
 turtle.end_fill()
 turtle.done()
-
-'''
-
-'''

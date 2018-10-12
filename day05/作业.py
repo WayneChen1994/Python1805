@@ -1,9 +1,11 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author: Wayne.Chen
 
 
 print()
+
+
 '''
 1.从控制台输入一个正数n，则打印n行*
     *
@@ -25,31 +27,41 @@ for x in range(1, n+1):
 input_str = input("请输入多个数值，中间用空格分隔：")
 # 对输入的字符串进行切片操作，得到一个元素为字符串类型数字的列表
 alist = input_str.split()
-#定义一个新列表，将原列表中每一个字符串类型的数字转成数字在添加到该新列表newList中，这样才能进行数字的排序操作
+# 定义一个新列表，将原列表中每一个字符串类型的数字转成数字在添加到该新列表newList中，这样才能进行数字的排序操作
 newList = []
+
+
 for i in alist:
     newList.append(int(i))
-#获取数字的个数
+
+
+# 获取数字的个数
 length = len(newList)
-#对newList进行排序操作
-#外层循环用来确定冒泡排序需要几轮循环
+
+
+# 对newList进行排序操作
+# 外层循环用来确定冒泡排序需要几轮循环
 for x in range(length-1):
-    #内层循环用来确定每一次循环需要比较的范围
+    # 内层循环用来确定每一次循环需要比较的范围
     for y in range(length-1-x):
-        #冒泡排序（降序）
-        #如果前一个元素小于后一个元素
+        # 冒泡排序（降序）
+        # 如果前一个元素小于后一个元素
         if newList[y] < newList[y+1]:
-            #交换元素的位置
+            # 交换元素的位置
             newList[y], newList[y+1] = newList[y+1], newList[y]
+
 
 print("冒泡排序的结果：", newList)
 
 '''
 
+
 '''
 3.输入一个时间，获取这个时间的下一秒
 
 import time
+
+
 while True:
     timeStr = input("请输入一个时间（时:分:秒）：")
     #对该时间字符串进行切片操作，得到一个列表，元素为时分秒对应的数字
@@ -63,6 +75,8 @@ while True:
         break
     else:
         print("输入的时间非法，请重新输入！")
+
+
 while True:
     #得到下一秒
     s += 1
@@ -81,12 +95,14 @@ while True:
 
 '''
 
+
 '''
 4.歌词解析器
 1.把歌词进行解析切片处理，把时间转成对应的浮点数
 2.使用字典将时间与歌词进行存储{时间：歌词}
 3.循环自动打印歌词【结束循环的条件，key为None的时候】
 '''
+
 
 musicLrc = '''[00:03.50]传奇
 [00:19.10]作词：刘兵 作曲：李健
@@ -110,10 +126,13 @@ musicLrc = '''[00:03.50]传奇
 [04:39.55][04:09.00][02:07.85]
 '''
 
+
 # 将多行文本按行切割，得到一个初始列表，保存每一行的字符串
 baseList = musicLrc.splitlines()
 # 定义一个字典，用于保存时间和歌词的对应信息：{时间:歌词}
 resDict = {}
+
+
 # 遍历每一行，对每一行进行二次切片操作，提取出歌词串、时间列表
 for line in baseList:
     lyTime = 0
@@ -130,16 +149,24 @@ for line in baseList:
         # 将时间作为Key、歌词文本作为Value，保存进字典
         resDict[lyTime] = lyStr
 
+
 # 将所有的时间点保存进一个列表，对列表进行升序排列
 # 依次遍历该列表，将其元素作为Key依次去resDict中取出歌词
 sortList = []
+
+
 for atime in resDict:
     sortList.append(atime)
 sortList.sort()
 
+
 import time
+
+
 # 控制停顿时间
 sleepTime = sortList[0]
+
+
 for index, t in enumerate(sortList):
     # 当前时间点
     currentTime = t

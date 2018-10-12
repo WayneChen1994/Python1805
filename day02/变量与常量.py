@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
+
 
 '''
 作用：将不同的数据存储到内存中
@@ -20,6 +21,7 @@ del 变量名
 作用：常量就是用来给变量赋值的
 比如：123，"hello"
 '''
+
 
 age = 18
 # 同时创建多个变量

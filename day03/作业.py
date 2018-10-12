@@ -1,7 +1,11 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
+
+
 print()
+
+
 '''
 计算1~100以内所有能被3或者17整除的数的和
 sum = 0
@@ -10,6 +14,7 @@ for i in range(1, 101):
         sum += i
 print(sum)
 '''
+
 
 '''
 计算100~999的水仙花数的个数
@@ -25,6 +30,7 @@ while num <= 999:
 print(count)
 '''
 
+
 '''
 计算五位数中回文数的个数：
 count = 0
@@ -38,6 +44,7 @@ for i in range(10000, 100000):
 print(count)
 '''
 
+
 '''
 计算200~500以内能被7整除但不是偶数的数的个数。
 count = 0
@@ -46,6 +53,7 @@ for i in range(200, 501):
         count += 1
 print(count)
 '''
+
 
 '''
 押宝游戏：
@@ -80,6 +88,7 @@ while money > 0:
         break
 '''
 
+
 '''
 百钱买百鸡，现有100文钱，公鸡5文钱一只，母鸡3文钱一只，小鸡一文钱3只，要求：公鸡，母鸡，小鸡都要有，
 把100文钱买100只鸡，买的鸡是整数。多少只公鸡，多少只母鸡多少只小鸡？
@@ -89,7 +98,6 @@ for cock in range(1, 99):
             if (cock+hen+chick == 100) and (cock*5+hen*3+chick*(1/3) == 100):
                 print("公鸡：%d只，母鸡：%d只，小鸡：%d只" % (cock, hen, chick))
 '''
-
 
 
 '''
@@ -106,4 +114,3 @@ for x in range(1, 10):
         if left_num >= right_num:
             print("%d=%dx%d" % (left_num*right_num, left_num, right_num), end="\t")
     print()
-

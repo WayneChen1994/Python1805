@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -13,6 +13,8 @@
 1、对象销毁之后，销毁一些不用的变量
 2、若类中有使用到数据库，在对象销毁的时候，断开数据库连接
 '''
+
+
 class Person():
     def __init__(self, name, age, sex):
         print("构造方法被调用了。。。。")
@@ -25,6 +27,7 @@ class Person():
 
     def __del__(self):
         print("析构函数被调用了。。。。")
+
 
 if __name__ == "__main__":
     per1 = Person("lili", 18, "girl")

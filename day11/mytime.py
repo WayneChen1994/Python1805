@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -10,18 +10,21 @@ import time
 def getTimeStamp():
     return time.time()
 
+
 # 获取当前时间字符串
 def getTimeStr():
-    return time.strftime('%Y-%m-%d %X',
-                         time.localtime(time.time()))
+    return time.strftime('%Y-%m-%d %X', time.localtime(time.time()))
+
 
 # 将时间字符串转换为时间戳，pattern为字符串对应的格式
 def timeStrToStamp(timeStr, pattern):
     return time.mktime(time.strptime(timeStr, pattern))
 
+
 # 将时间戳转换为时间字符串，pattern为字符串对应的格式
 def timeStampToStr(timeStamp, pattern):
     return time.strftime(pattern, time.localtime(timeStamp))
+
 
 # 通过月份打印当月日历，只使用time模块
 def getCalendarByMonth(month):
@@ -41,5 +44,6 @@ def getCalendarByMonth(month):
         if (x+space) % 7 == 0:
             res += "\n"
     return res
+
 
 print(getCalendarByMonth(9))

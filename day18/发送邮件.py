@@ -8,6 +8,8 @@ import smtplib
 # 邮件文本的类
 from email.mime.text import MIMEText
 
+
+# 发送人的邮箱地址，以及授权码
 sender = 'waynechen1994@163.com'
 password = '39miku0831'
 
@@ -30,7 +32,7 @@ mailServer = smtplib.SMTP('smtp.163.com', 25)
 mailServer.login(sender, password)
 # 发送邮件
 # 参数一：发送人的地址
-# 参数二：发送给谁，可以群发
+# 参数二：发送给谁，是一个列表，可以群发
 # 参数三：发送的内容
 mailServer.sendmail(sender, sender, msg.as_string())
 # 退出邮箱

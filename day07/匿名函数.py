@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 匿名函数
 概念：是指一类不需要定义函数名的函数
@@ -19,9 +24,11 @@ lambda 参数1，参数2，……，参数n:表达式
 2、通过变量来进行函数的调用【与之前的函数调用相同】
 '''
 
+
 # func = lambda a,b:a if a>b else b
 # print(type(func))
 # print(func(10, 20))
+
 
 # func2 = lambda : print("hello")
 # func2()

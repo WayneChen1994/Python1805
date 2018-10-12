@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -19,6 +19,7 @@ ATM：
 特征：
 行为：开户，登陆，查询，存款，取款，转账，改密，锁卡，解锁，退出
 '''
+
 
 '''
 音乐播放器

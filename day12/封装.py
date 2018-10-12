@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -16,6 +16,7 @@
 2、保证数据的安全性
 '''
 
+
 '''
 @property的作用：
 1、将函数变成属性来进行调用
@@ -25,18 +26,18 @@
 3、将调用者的代码写得更加简单，增加数据的过滤
 '''
 
+
 class Person:
     def __init__(self, name, age, money):
         self.name = name
         self.__age = age
         self.__money = money
 
-
-    @property   #get方法添加@property，并且方法名为去掉下划线的属性名
+    @property   # get方法添加@property，并且方法名为去掉下划线的属性名
     def money(self):
         return self.__money
 
-    @money.setter   #set方法添加@属性名.setter【去掉下划线的属性名】
+    @money.setter   # set方法添加@属性名.setter【去掉下划线的属性名】
     def money(self, mon):
         if mon < 0:
             print("钱的数值不对，存储失败")

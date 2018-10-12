@@ -1,6 +1,8 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
-# author：zhangjiao
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 银行系统剩余功能
 # 使用之前的方法，完成以下的功能
@@ -9,6 +11,7 @@ os.path.dirname(path)
 os.path.basename(path)
 os.path.split(path)
 '''
+
 
 # 实现os.path.join()
 def myJoin(path, *paths):
@@ -36,12 +39,14 @@ def myJoin(path, *paths):
     res = '/'.join(plist)
     return res
 
+
 # print(myJoin('/aaa', 'bbb', 'ccc', 'ddd', 'eee.py'))
 
 
 # 实现os.path.dirname()
 def myDirname(path): 
     return path[:path.rfind('/')]
+
 
 # print(myDirname('/aaa/bbb/ccc/ddd.py'))
 
@@ -50,16 +55,20 @@ def myDirname(path):
 def myBasename(path):
     return path[path.rfind('/')+1:]
 
+
 # print(myBasename('/aaa/bbb/ccc/ddd.py'))
 
 
 import os
+
+
 print(os.path.split('/'))
 print(os.path.split('/.'))
 print(os.path.split('/qwer'))
 print(os.path.split('.'))
 print(os.path.split('./'))
 print(os.path.split('..'))
+
 
 # 实现os.path.split()
 def mySplit(path=''):
@@ -72,9 +81,8 @@ def mySplit(path=''):
         filePart = path
     return tuple([dirPart, filePart])
 
+
 print(mySplit('/.'))
 print(mySplit('./'))
 print(mySplit('/'))
 print(mySplit('.'))
-
-

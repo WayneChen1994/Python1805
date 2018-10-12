@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -10,6 +10,7 @@
 
 首尾双下划线：__foo__定义特殊的方法与变量，一般用于定义系统函数以及变量
 '''
+
 
 class Person:
     def __init__(self, name, age, money):

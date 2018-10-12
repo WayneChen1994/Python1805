@@ -1,6 +1,7 @@
 #!/usr/bin/env python
-#-*- coding:utf-8 -*-
+# -*- coding:utf-8 -*-
 # author:Wayne.Chen
+
 
 '''
 闰年：
@@ -10,6 +11,7 @@ if (year % 100 != 0 and year % 4 == 0) or (year % 100 == 0 and year % 400 == 0):
 else:
     print(str(year) + "年不是闰年")
 '''
+
 
 '''
 水仙花数：
@@ -23,6 +25,7 @@ else:
     print(str(num) + "不是水仙花数")
 '''
 
+
 '''
 回文数：
 num = int(input("请输入一个五位数："))
@@ -35,6 +38,7 @@ if A==a and B==b:
 else:
     print(str(num) + "不是回文数")
 '''
+
 
 '''
 摇色子游戏：

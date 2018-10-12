@@ -1,5 +1,11 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 import time
 import random
+
 
 # 定义一个字典保存所有的用户信息
 allInfo = {}

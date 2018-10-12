@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author: Wayne.Chen
 
 
@@ -15,9 +15,12 @@ else语句执行的条件，当正常跳出循环体的时候
 非正常结束：break
 '''
 
+
 '''
 判断输入的银行卡密码【6位】0~9是否合法
 '''
+
+
 # n = 1
 # res = 0
 # while n <= 10:
@@ -28,11 +31,11 @@ else语句执行的条件，当正常跳出循环体的时候
 # else:
 #     print("res =", res)
 
+
 '''
 语句组：
 当while循环后面只有一条语句的时候，我们可以将该语句与while语句强制性写成一行
 '''
+
+
 # while True: print("hello")
-
-
-

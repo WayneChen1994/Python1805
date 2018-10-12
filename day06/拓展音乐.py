@@ -1,15 +1,24 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 import pygame
 import time
+
 
 # 初始化音频
 pygame.mixer.init()
 
+
 # 加载音乐
 pygame.mixer.music.load("dang.mp3")
+
 
 # 播放音乐
 pygame.mixer.music.play()
 time.sleep(30)
+
 
 '''
 音乐播放器

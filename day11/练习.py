@@ -1,9 +1,8 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
-import time
 '''
 练习：
 同桌炫耀新买的iPhoneXS
@@ -17,6 +16,7 @@ import time
 行为：拍照，打电话
 '''
 
+
 class Phone():
     def __init__(self, pinpai, jiage, xingneng):
         self.pinpai = pinpai
@@ -28,6 +28,7 @@ class Phone():
 
     def call(self):
         print("打电话给同桌。。。。")
+
 
 class Person():
     def __init__(self, name, money, iphone):
@@ -45,4 +46,4 @@ class Person():
 #     per.xuxiao()
 #     per.iphone.paizhao()
 #     per.iphone.call()
-    # iphone.paizhao()
+#     iphone.paizhao()

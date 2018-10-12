@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 每个模块中，都有一个变量名为__name__的内置变量，
 当模块在其内部执行的时候__name__的值为__main__，
@@ -7,6 +12,8 @@
 if __name__ == '__main__':
 而作为我们整个程序的一个入口
 '''
+
+
 def main():
     pass
 

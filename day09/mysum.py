@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 def getSum(n):  # 求和：1+2+……+n
     return sum([x for x in range(1, n + 1)])
 

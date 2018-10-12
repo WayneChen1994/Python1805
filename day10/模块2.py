@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 模块的引入方式：
 1、整体引入
@@ -27,7 +32,9 @@ import 模块名 as 别名
 
 注意：引入模块的时候，不要重复引入
 '''
-from zuoye import *
+
+
+from day10.zuoye import *
 import collections as co
 
 co.Iterator

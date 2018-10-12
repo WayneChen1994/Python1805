@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 def pathjoin(path, *paths):
     # 元组
     if len(paths) == 0:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -46,7 +46,6 @@ class Gun:
 
     def shoot(self):
         self.danjia.jiandan()
-
 
 
 class Person():

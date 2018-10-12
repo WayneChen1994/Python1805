@@ -1,11 +1,20 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 '''
 返回函数：
 将函数作为返回值返回，我们就称此函数为返回函数
 '''
+
+
 import functools
+
 
 int3 = functools.partial(int, base=2)
 # print(type(int3))
+
 
 # 装饰器
 # def outer(f):
@@ -13,6 +22,7 @@ int3 = functools.partial(int, base=2)
 #         print("**********")
 #         f()
 #     return inner
+
 
 '''
 求和：

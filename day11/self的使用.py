@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -11,6 +11,8 @@ self并不是我们使用的关键字，
 注意：self在函数声明的时候，需要声明，并且要写在参数列表的第一位
 调用的时候并不需要手动地传递self，调用的时候，它会将自己自动地传递进去。
 '''
+
+
 # class Student():
 #     def __init__(self):
 #         print("self", self)
@@ -39,6 +41,7 @@ self并不是我们使用的关键字，
 特征：品牌，价钱，性能
 行为：拍照，打电话
 '''
+
 
 class Phone():
     def __init__(self, brand, price,  performance):

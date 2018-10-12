@@ -1,13 +1,15 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author: Wayne.Chen
 
 
 print()
+
+
 '''
 冒泡排序
 第一种实现方式：
-li = [32,54,23,12,56,8,45,39]
+li = [32, 54, 23, 12, 56, 8, 45, 39]
 length = len(li)
 while length > 0:
     length -= 1
@@ -19,9 +21,10 @@ while length > 0:
 print(li)
 '''
 
+
 '''
 第二种实现方式：
-li = [32,54,23,12,56,8,45,39]
+li = [32, 54, 23, 12, 56, 8, 45, 39]
 for i in range(len(li)-1):
     for j in range(len(li)-1-i):
         if li[j] > li[j+1]:
@@ -29,9 +32,10 @@ for i in range(len(li)-1):
 print(li)
 '''
 
+
 '''
 第三种实现方式：
-li = [32,54,23,12,56,8,45,39]
+li = [32, 54, 23, 12, 56, 8, 45, 39]
 for i in range(len(li)-1, 0, -1):
     for j in range(i):
         if li[j] > li[j+1]:
@@ -39,11 +43,14 @@ for i in range(len(li)-1, 0, -1):
 print(li)
 '''
 
+
 '''
 从控制输入一串字符串，要求字符串只能数字字母下划线，并且长度大于等于20，
 若不符合条件重新输入，输入完毕之后，要求从控制台输入一个字符，使用自己输入的字符，
 来对字符串进行切片，切片完毕之后，并且去掉空串，删除列表中的重复元素。
 '''
+
+
 # while True:
 #     input_str = input("请输入一串字符串（只能由数字、字母或下划线组成，并且长度大于等于20）：")
 #     if len(input_str) >= 20:
@@ -86,6 +93,7 @@ print(li)
 # alist = list(set(alist))
 # print("3、去重处理结果：", alist)
 
+
 '''
 从控制台输入一个字符串，实现字符串的反转
 str1 = input("请输入一个字符串：")
@@ -109,6 +117,7 @@ print("反转后的结果：" + str2)
 #     if row == 6:
 #         break
 
+
 '''
 写一个双色球彩票系统，
 1.开始游戏
@@ -126,10 +135,16 @@ print("反转后的结果：" + str2)
 9.用户可以选择继续买票或者是退出。
 买票和退出的时候要求打印剩余金额。
 '''
+
+
 import random
 import time
+
+
 print("开始游戏".center(50, "*"))
 base_money = int(input("请输入起始金额："))
+
+
 while True:
     amount = int(input("一张彩票需要2元，您有%d元，需要购买多少张?" % (base_money)))
     if base_money - amount * 2 < 0:
@@ -186,5 +201,6 @@ while True:
         else:
             print("输入有误！默认继续进行，请稍后……")
             time.sleep(2)
+
 
 print("游戏结束".center(50, "*"))

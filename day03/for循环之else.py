@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author: Wayne.Chen
 
 
@@ -12,6 +12,7 @@ else:
 当整个循环正常执行结束之后，则执行else下面的语句块2，若是通过break退出的，则不会执行else语句
 '''
 
+
 # for x in range(1, 100):
 #     if x % 20 == 0:
 #         continue
@@ -20,12 +21,14 @@ else:
 # else:
 #     print("end")
 
+
 '''
 需求：从控制台输入六位的银行卡密码，判断输入的密码是否合法：
 1、长度6位
 2、密码取值0~9
 并且打印提示
 '''
+
 
 # pwd = input("请输入六位的银行卡密码：")
 # pwd_len = 0
@@ -56,6 +59,3 @@ else:
 #         print("密码长度不合法")
 #     else:
 #         print("密码合法")
-
-
-

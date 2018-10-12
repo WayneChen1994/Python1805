@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -26,6 +26,7 @@
 5、当使用对象来进行调用的时候，成员变量不存在的情况下，
 则会调用类变量，若类变量也不存在则报错。
 '''
+
 
 class Person():
     name = "hehe"

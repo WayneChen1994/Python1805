@@ -1,3 +1,8 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 # def lens(obj):
 #     if type(obj) in [str, list, tuple]:
 #         if len(obj) > 5:
@@ -24,6 +29,7 @@
 #     else:
 #         print("类型有误")
 
+
 # print(func("111"))
 # print(func("11 1"))
 # print(func(["a","","b"]))
@@ -34,8 +40,8 @@
 #     ji = 1
 #     for x in range(1, n + 1):
 #         ji *= x
-
 #     return ji
+
 
 # print(jiecheng(5))
 # print(jiecheng(6))

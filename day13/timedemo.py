@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：zhangjiao
 import  time
+
 
 '''
 将封装的time模块改写成一个类，继承于time模块

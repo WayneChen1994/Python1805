@@ -1,3 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 import os
 
 
@@ -8,15 +13,15 @@ def getAllDG(path, treeshow):
         absPath = os.path.join(path, filename)
         if os.path.isdir(absPath):
             print("%s目录：%s" % (treeshow, filename))
-            getAll(absPath, treeshow)
+            getAllDG(absPath, treeshow)
         else:
             print("%s文件：%s" % (treeshow, filename))
 
 
 # getAll(r"/home/wayne/PythonCode/Python1805", "")
 
-def getAllStack(path, treeshow):
-    treeshow += "    "
+
+def getAllStack(path):
     stack = []
     stack.append(path)
     while len(stack) != 0:
@@ -28,10 +33,11 @@ def getAllStack(path, treeshow):
                 print("目录：%s" % filename)
                 stack.append(absPath)
             else:
-                print("%s文件：%s" % (treeshow, filename))
+                print("%s文件：%s" % (filename))
 
 
 # getAllStack(r"/home/wayne/PythonCode/Python1805", "")
+
 
 import collections
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -11,6 +11,8 @@
 
 __init__() 系统提供的函数
 '''
+
+
 class Person():
     def __init__(self, name, age, sex):
         print("构造方法被调用了。。。。")
@@ -20,6 +22,7 @@ class Person():
 
     def introduce(self):
         print("我叫%s，今年%d岁，我是%s" % (self.name, self.age, self.sex))
+
 
 if __name__ == "__main__":
     per1 = Person("lili", 18, "girl")

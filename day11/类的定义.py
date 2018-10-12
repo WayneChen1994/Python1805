@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -15,8 +15,10 @@ class 类名:
 3、见名知义【取名尽可能简短】
 '''
 
+
 class demo():
     print("hello world")
+
 
 '''
 类的设计：
@@ -25,10 +27,12 @@ class demo():
 3、行为 ---> 【动词】eat,speak,run,study,sleep
 '''
 
+
 '''
 类的属性 <---> 特征
 类的方法 <---> 行为
 '''
+
 
 class Person:
     name = "lili"
@@ -55,6 +59,8 @@ class Person:
 类中的成员方法的方法的访问
 对象名.方法名()
 '''
+
+
 # list1 = list()
 per = Person()
 print(per)
@@ -63,6 +69,7 @@ print(per.age)
 per.eat("蛋炒饭")
 per.sleep()
 per.study()
+
 
 '''
 需求：创建一个学生类：

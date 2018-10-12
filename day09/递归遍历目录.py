@@ -1,4 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# author: Wayne.Chen
+
+
 import os
+
 
 # 递归遍历目录
 def getAllFilesDG(path, indent=""):
@@ -11,6 +17,7 @@ def getAllFilesDG(path, indent=""):
             getAllFilesDG(absPath, indent)
         else:
             print(indent, "文件：", filename)
+
 
 # 栈模拟遍历目录
 def getAllFilesStack(path):
@@ -39,17 +46,21 @@ def getAllFilesStack(path):
 
 # 队列模拟遍历目录
 import collections
+
+
 def getAllFilesQueue(path):
     # 初始化一个队列
     queue = collections.deque()
     # 让初始路径入队
     queue.append(path)
+
     # 判断队列是否为空
     while len(queue) != 0:
         # 取出队列中的头一个路径
         dirPath = queue.popleft()
         # 列出该路径下的所有文件【相对路径】
         filesList = os.listdir(dirPath)
+
         # 遍历
         for filename in filesList:
             # 进行路径拼接

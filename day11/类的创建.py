@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#-*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 # author：Wayne
 
 
@@ -23,6 +23,7 @@ class Student():
 
     def introduce(self):
         print('''大家好！我是%s班的%s生一枚，我叫%s，学号为%s，我的成绩是%d分。。。''' % (self.classname, self.sex, self.name, self.stuId, self.score))
+
 
 if __name__ == '__main__':
     stu1 = Student("001", "张三", "py1806", "男", 70)

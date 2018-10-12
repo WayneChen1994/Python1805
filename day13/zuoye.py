@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # author：Wayne
 
+
 '''
 import time
 
@@ -35,6 +36,8 @@ if __name__ == "__main__":
 1、如何获取当前月的天数
 2、这个月的第一天是星期几
 '''
+
+
 '''
 import time
 def getcalendar(year, month):
@@ -62,6 +65,7 @@ def getcalendar(year, month):
 
 print(getcalendar(2018, 12))
 '''
+
 
 '''
 def oushu(n):
@@ -94,12 +98,16 @@ if __name__ == "__main__":
     print(beishu(3, 10))
 '''
 
+
 import time
 import datetime
+
+
 def getnextime():
     print(datetime.datetime.now())
     t1 = time.time()+1
     lt = time.localtime(t1)
     return time.strftime("%Y-%m-%d %X", lt)
+
 
 print(getnextime())

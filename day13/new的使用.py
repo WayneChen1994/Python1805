@@ -8,9 +8,11 @@
 一个类只创建一个对象。
 '''
 
+
 class Person:
     # 静态成员属性
     singins = None
+
     def __new__(cls, name, age):
         if cls.singins is None:
             # 使用new方法调用的时候，需要使用super调用
