@@ -5,16 +5,16 @@
 select a.studentid,sw as '生物成绩',wl as '物理成绩'
 from
     (select studentid,number as sw
-    from score left join course
+    from score inner join course
     on score.courseid=course.cid
     where course.cname='生物') as a
-left join
+inner join
     (select studentid,number as wl
-     from score left join course
+     from score inner join course
      on score.courseid=course.cid
      where course.cname='物理') as b
 on a.studentid=b.studentid
-where sw>if(isnull(wl),0,wl);
+where sw>wl;
 ---------------------------------------------------------------------
 
 3、查询平均成绩大于60分的同学的学号和平均成绩；
@@ -29,7 +29,7 @@ having avg(number)>60;
 ---------------------------------------------------------------------
 select b.studentid,a.sname,b.c as '选课数',b.s as '总成绩'
 from student as a
-left join
+inner join
 (select studentid,count(courseid) as c,sum(number) as s
 from score
 group by studentid) as b
@@ -47,20 +47,44 @@ where tname like '李%';
 --------------------------------------------------------------------
 select distinct s1.studentid,s2.sname
 from score as s1
-left join student as s2
+inner join student as s2
 on s1.studentid=s2.sid
 where s1.courseid not in (
     select cid
     from course as c
-    left join teacher as t
+    inner join teacher as t
     on c.teacherid=t.tid
     where t.tname='叶平'
 );
 ---------------------------------------------------------------------
 
 7、查询学过“001”并且也学过编号“002”课程的同学的学号、姓名；
+---------------------------------------------------------------------
+select s2.studentid,s1.sname
+from student as s1
+inner join
+    (select a.studentid
+    from
+    (select studentid from score where courseid=1) as a
+    inner join
+    (select studentid from score where courseid=2) as b
+    on a.studentid=b.studentid) as s2
+on s1.sid=s2.studentid;
+---------------------------------------------------------------------
 
 8、查询学过“叶平”老师所教的所有课的同学的学号、姓名；
+---------------------------------------------------------------------
+select s1.studentid,s2.sname
+from score as s1
+inner join student as s2
+on s1.studentid=s2.sid
+where s1.courseid=all
+    (select cid
+    from course as c
+    inner join teacher as t
+    on c.teacherid=t.tid
+    where t.tname='叶平');
+--------------------------------------------------------------------
 
 9、查询课程编号“002”的成绩比课程编号“001”课程低的所有同学的学号、姓名；
 
